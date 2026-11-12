@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+</head>
+<body>
+    <h1>Checkout Form</h1>
+    <p>Please fill in your details to complete your order.</p>
+
+        <h2>Personal Information</h2>
+        <label for="name">Full Name:</label>
+        <input
+            type="text"id="name"name="name"autocomplete="name" required  >
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input
+            type="email"id="email" name="email"autocomplete="email"required
+        >
+        <br><br>
+
+        <h2>Delivery Information</h2>
+
+        <label for="address">Address:</label>
+        <input
+            type="text" id="address"
+            name="address" autocomplete="street-address"required >
+        <br><br>
+        <label for="city">City:</label>
+        <input
+            type="text"id="city"name="city"autocomplete="address-level2" required >
+        <br><br>
+        <label for="country">Country:</label>
+        <select
+            id="country" name="country" autocomplete="country-name" required >
+            <option value="">Select Country</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Kenya">Kenya</option>
+            <option value="South Africa">South Africa</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br><br>
+        <h2>Payment Information</h2>
+        <label for="cardNumber">Card Number:</label>
+        <input
+            type="text" id="cardNumber" name="cardNumber"
+            autocomplete="cc-number" inputmode="numeric"pattern="[0-9]{16}"
+          maxlength="16"placeholder="Enter 16 digit card number"
+            title="Card number must contain exactly 16 digits"
+            required >
+        <br><br>
+        <label for="expiryMonth">Expiry Month:</label>
+        <select
+            id="expiryMonth"  name="expiryMonth"autocomplete="cc-exp-month"
+            required >
+            <option value="">Select Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <br><br>
+
+        <label for="expiryYear">Expiry Year:</label>
+        <select
+            id="expiryYear" name="expiryYear"
+            autocomplete="cc-exp-year"required >
+            <option value="">Select Year</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+        </select>
+        <br><br>
+
+        <h2>Terms and Conditions</h2>
+
+        <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            required
+        >
+
+        <label for="terms">
+            I agree to the terms and conditions.
+        </label>
+        <br><br>
+
+        <button type="submit">Complete Checkout</button>
+
+    </form>
+
+</body>
+</html>
